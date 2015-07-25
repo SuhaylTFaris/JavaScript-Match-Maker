@@ -1,3 +1,7 @@
 body {
   padding-top: 2em;
 }
+
+.input-group-addon {
+  padding-right: 30px;
+}
