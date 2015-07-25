@@ -21,3 +21,13 @@ function grabValues() {
 
   return createPerson(first, last, phone, city);
 }
+
+function verifyPhone(phn) {
+  if (phn.length !== 12)
+    return false;
+  else if (!(/\d{3}-\d{3}-\d{4}/.test(phn)))
+    return false;
+  else {
+    return true;
+  }
+}
