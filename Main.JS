@@ -12,3 +12,12 @@ function createPerson(first, last, phone, city) {
 
   return person;
 }
+
+function grabValues() {
+  var first = document.getElementById('firstName').value;
+  var last = document.getElementById('lastName').value;
+  var phone = document.getElementById('phone').value;
+  var city = document.getElementById('city').value;
+
+  return createPerson(first, last, phone, city);
+}
