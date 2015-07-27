@@ -36,3 +36,25 @@ function getMentor() {
   var number = prompt('What is the mentor\'s phone #?');
   var city = prompt('In what city does this mentor currently live?');
   city.toLowerCase();
+
+  var mentorInfo = {};
+
+    mentorInfo.name = name;
+    mentorInfo.number = number;
+    mentorInfo.city = city;
+
+    mentors.push(mentorInfo);
+
+    var li = document.createElement('li');
+    var last = mentors.length - 1;
+    var mentorList = document.getElementById('mentor');
+    var textnode = document.createTextNode('Name: ' + mentors[last].name + '  ' + 'City: ' + mentors[last].city + '  ' + 'Number: ' + mentors[last].number);
+
+    li.appendChild(textnode);
+    mentorList.appendChild(li);
+
+    var newMentor = prompt('Do you want to add another mentor?');
+    if (newMentor.toLowerCase() === 'yes') {
+      getMentor();
+    }
+  }
