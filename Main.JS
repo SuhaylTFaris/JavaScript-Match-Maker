@@ -31,3 +31,29 @@ function verifyPhone(phn) {
     return true;
   }
 }
+
+function addAnother() {
+  var arr = document.getElementById('arr').value;
+  var person = grabValues();
+  var test = verifyPhone(person.phone);
+  var form = document.getElementsByTagName('form')[0];
+
+  if (test) {
+    if (arr === "Student") {
+      students.push(person);
+      form.reset();
+      return true;
+    } else {
+      mentors.push(person);
+      form.reset();
+      return true;
+    }
+  } else {
+    alert('Please enter the phone number in the following format: xxx-xxx-xxxx.')
+    return false;
+  }
+}
+
+function chooseCity() {
+
+}
