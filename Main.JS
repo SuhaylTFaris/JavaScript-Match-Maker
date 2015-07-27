@@ -2,7 +2,7 @@ console.log('sanity check!');
 var students = [],
   mentors = [];
 
-  function getStudent() {
+function getStudent() {
   var name = prompt('What is the student\'s name?');
   var number = prompt('What is the student\'s phone #?');
   var city = prompt('In what city does this student currently live?');
@@ -30,3 +30,9 @@ var students = [],
       getStudent();
     }
   }
+
+function getMentor() {
+  var name = prompt('What is the mentor\'s name?');
+  var number = prompt('What is the mentor\'s phone #?');
+  var city = prompt('In what city does this mentor currently live?');
+  city.toLowerCase();
