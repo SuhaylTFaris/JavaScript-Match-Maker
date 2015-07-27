@@ -58,3 +58,13 @@ function getMentor() {
       getMentor();
     }
   }
+
+document.getElementById('get_student').addEventListener('click', function(event) {
+    getStudent();
+  });
+
+document.getElementById('get_mentor').addEventListener('click', function(event) {
+    getMentor();
+  });
+
+  
