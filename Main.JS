@@ -19,3 +19,14 @@ var students = [],
   var li = document.createElement('li');
   var last = students.length - 1;
   var studentList = document.getElementById('student');
+
+  var textnode = document.createTextNode('Name: ' + students[last].name + '\n' + 'City: ' + students[last].city + '' + 'Number: ' + students[last].number);
+
+    li.appendChild(textnode);
+    studentList.appendChild(li);
+
+    var newStudent = prompt('Do you want to add another student?');
+    if (newStudent.toLowerCase() === 'yes') {
+      getStudent();
+    }
+  }
